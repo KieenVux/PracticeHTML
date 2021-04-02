@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+  background-color: rgb(235, 177, 177);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#header .search-btn {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  padding: 30.8px;
+}
+#header .search-btn:hover {
+  color: #fff;
+  background-color: cyan;
+  cursor: pointer;
+}
+#nav {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav > li > a {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 24px;
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+}
+a::selection {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+#nav > li:hover > a {
+  background-color: aqua;
+  color: #333;
+}
+#nav .subnav {
+  display: none;
+  list-style-type: none;
+  min-width: 160px;
+  background-color: azure;
+  position: absolute;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+#nav .subnav li a {
+  color: #333;
+  display: block;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav li:hover a {
+  color: #fff;
+  background-color: #333;
+}
+#slider {
+  padding-top: 50%;
+  background: url(/TheBand/assets/img/5b8066c580eb3519008b56a1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-color: #333;
+  position: relative;
+  margin-top: 80px;
+}
+#slider .text-content {
+  bottom: 114px;
+  padding: 53px 5px;
+  color: #fff;
+  position: absolute;
+}
+#slider .text-heading {
+  font-weight: 600;
+  text-align: center;
+  padding: 65px;
+}
+#slider .text-description {
+  font-size: 22px;
+}
+
+#content .content-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  padding: 65px;
+}
+#content .section-heading {
+  text-align: center;
+  margin: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+#content .section-subheading {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.5;
+  margin: 30px 0px;
+}
+#content .about-text-content {
+  text-align: justify;
+  margin: 30px 0px;
+  line-height: 1.6;
+}
+#content .team{
+  margin-top: 48px;
+  overflow: hidden;
+}
+#content .member{
+  width: 33.33333%;
+  text-align: center;
+  float: left;
+}
+#content .name-member{
+  font-size: 16px;
+}
+#content .img-member{
+  width: 60%;
+  margin-top: 16px;
+  border-radius: 4px;
+}

@@ -1,0 +1,249 @@
+/* Resest */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+/*
+Nguyên tắc làm 
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Từ tổng quan đến chi tiết
+*/
+
+/*
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4.Kiểu dáng (EX: hình tròn, hình vuông,....)
+*/
+#main {
+}
+.clear {
+  clear: both;
+}
+.text-white {
+  color: #fff !important;
+}
+#header {
+  background-color: rgb(95, 195, 241);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+#header .search-btn {
+  line-height: 60px;
+  padding: 0 30px;
+  float: right;
+}
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+#header .search-icon {
+  color: #fff;
+}
+
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style-type: none;
+}
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: white;
+}
+a::selection {
+  background-color: cornflowerblue;
+}
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+#nav .subnav li a {
+  color: #333;
+  display: block;
+}
+#nav .subnav li:hover a {
+  color: #fff;
+  background-color: #333;
+}
+#slider {
+  margin-top: 60px;
+  padding-top: 50%;
+  background-image: url(../img/5dd3ee310d8784c4349ff6f2314e6b52.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  padding: 16px 32px;
+  width: 100%;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  /* left: 0;
+  right: 0; */
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 25px;
+  letter-spacing: 5px;
+}
+#slider .text-description {
+  font-size: 15px;
+}
+
+#content .content-section {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 65px;
+}
+#content .section-heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#content .section-subheading {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  margin: 30px 0px;
+  opacity: 0.5;
+}
+#content .about-text-content {
+  margin: 30px 0px;
+  text-align: justify;
+  /* Tiếng anh thì hay xài 1.4 */
+  line-height: 1.6;
+}
+#content .team {
+  margin-top: 48px;
+  overflow: hidden;
+}
+#content .member {
+  width: 33.333333%;
+  text-align: center;
+  float: left;
+}
+#content .name-member {
+  font-size: 16px;
+}
+#content .img-member {
+  width: 60%;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+.tour-section {
+  background-color: #000;
+}
+.tikets-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+.tikets-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 2px solid #ddd;
+  list-style-type: none;
+}
+.tikets-list .sold-out {
+  background-color: #f44336;
+  font-size: 15px;
+  color: #fff;
+  padding: 5px;
+  margin-left: 20px;
+}
+.tikets-list .quantity {
+  background-color: #333;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border-radius: 48%;
+  float: right;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+.place-list{
+  overflow: hidden;
+  margin: 32px -10px 0px;
+}
+.place-item{
+  float: left;
+  width: 33.33333%;padding: 10px;
+}
+.place-img{
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+.place-img:hover {
+  background-color: #333;
+  opacity: 0.7;
+}
+.palce-body{
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+.place-heading{
+  font-size: 15px;
+}
+.place-time{  
+  margin: 15px 0px;
+  color: #757575;
+}
+.palce-des{
+
+}
+.place-buy-btn{
+
+}
+#footer {
+}
